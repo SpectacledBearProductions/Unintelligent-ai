@@ -17,6 +17,8 @@ function checkGreeting() {
         let p = document.createElement("p");
         p.textContent = greetings[randomIndex];
 
+        let p = document.createElement("p");
+        p.textContent = name[randomIndex];
         output.appendChild(p);
 
     } else {
