@@ -20,6 +20,14 @@ function handleInput() {
         p.textContent = responses[Math.floor(Math.random() * responses.length)];
     }
 
+else if (
+        input.includes("thankyou, ty, Thankyou")
+    ) {
+        let responses = ["Your Welcome", "No problom"];
+        p.textContent = responses[Math.floor(Math.random() * responses.length)];
+    }
+
+
       else if (
         input.includes("why")
     ) {
