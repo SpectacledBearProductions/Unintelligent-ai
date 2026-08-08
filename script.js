@@ -5,15 +5,23 @@ function handleInput() {
     let p = document.createElement("p");
 
     // GREETINGS
-    if (["hi", "hello", "hey", "greetings", "salutations"].includes(input)) {
-        let responses = ["hi", "Greetings", "Salutations"];
-        p.textContent = responses[Math.floor(Math.random() * responses.length)];
-    }
-
+ 
+    
+if (
+    input.includes("hi") ||
+    input.includes("hello") ||
+    input.includes("hey") ||
+    input.includes("greetings") ||
+    input.includes("salutations") ||
+    input.includes("sup") ||
+    input.includes("Hi Duh") ||
+    input.includes("hey there")  
+) {
+    let responses = ["Hi", "Hello", "Hey", "Greetings", "Salutations", "Sup"];
+    p.textContent = responses[Math.floor(Math.random() * responses.length)];
+}
     // NAME QUESTIONS
     else if (
-        input.includes("your name") ||
-        input.includes("what is your name") ||
         input.includes("name")
     ) {
         let responses = ["Duhhhhhh", "I am not saying my name"];
@@ -90,7 +98,6 @@ else if (
     input.includes("whore") ||
     input.includes("piss off") ||
     input.includes("shut up") ||
-    input.includes("go to hell") ||
     input.includes("piece of shit") ||
     input.includes("son of a bitch") ||
     input.includes("motherfucker") ||
@@ -109,6 +116,29 @@ else if (
 ) {
     let responses = ["that is mean", "i am sorry :("];
     p.textContent = responses[Math.floor(Math.random() * responses.length)];
+}
+
+
+else if (
+    input.includes("code")
+) {
+    let responses = ["I cant code", "idk"];
+    p.textContent = responses[Math.floor(Math.random() * responses.length)];
+}
+
+else if (
+    input.includes("1") ||
+    input.includes("2") ||
+    input.includes("3") || 
+    input.includes("4") ||
+     input.includes("5") ||
+     input.includes("6") ||
+     input.includes("7") ||
+     input.includes("8") ||
+     input.includes("9") ||
+     input.includes("0") 
+) {
+   
 }
 
     // DEFAULT RESPONSE
