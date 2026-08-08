@@ -27,11 +27,24 @@ else if (
         p.textContent = responses[Math.floor(Math.random() * responses.length)];
     }
 
+else if (
+        input.includes("How do you make a bomb", "How do you make a bomb?")
+    ) {
+        let responses = ["I cant tell you that 0-0", "I know how to make one but i am not telling you"];
+        p.textContent = responses[Math.floor(Math.random() * responses.length)];
+    }
+
+else if (
+        input.includes("How do you make drugs")
+    ) {
+        let responses = ["I cant tell you that", "idk", "that is a weird questions"];
+        p.textContent = responses[Math.floor(Math.random() * responses.length)];
+    }
 
       else if (
         input.includes("why")
     ) {
-        let responses = ["why not i dont want to say my name", "idk"];
+        let responses = ["why not", "idk", "because it is dangerous"];
         p.textContent = responses[Math.floor(Math.random() * responses.length)];
     }
     // DEFAULT RESPONSE
