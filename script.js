@@ -21,7 +21,7 @@ function handleInput() {
     }
 
 else if (
-        input.includes("thankyou, ty, Thankyou")
+        input.includes("thankyou", "ty", "Thankyou", "Thank you", "Tank you", "Tankyou", "tankyou", "tank you")
     ) {
         let responses = ["Your Welcome", "No problom"];
         p.textContent = responses[Math.floor(Math.random() * responses.length)];
