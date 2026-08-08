@@ -19,28 +19,37 @@ function handleInput() {
         let responses = ["Duhhhhhh", "I am not saying my name"];
         p.textContent = responses[Math.floor(Math.random() * responses.length)];
     }
+    
+    else if (
+    input.includes("thank you") ||
+    input.includes("thanks") ||
+    input.includes("thx") ||
+    input.includes("ty") ||
+    input.includes("TY") ||
+    input.includes("Ty") ||
+    input.includes("tY") ||
+    input.includes("Thank you") ||
+    input.includes("Thankyou") ||
+    input.includes("thankyou") 
+) {
+    let responses = ["You're welcome", "No problem"];
+    p.textContent = responses[Math.floor(Math.random() * responses.length)];
+}
 
 else if (
-        input.includes("thankyou", "ty", "Thankyou", "Thank you", "Tank you", "Tankyou", "tankyou", "tank you")
-    ) {
-        let responses = ["Your Welcome", "No problom"];
-        p.textContent = responses[Math.floor(Math.random() * responses.length)];
-    }
+    input.includes("how do you make a bomb")
+) {
+    let responses = ["I cant tell you that 0-0", "I know how to make one but i am not telling you"];
+    p.textContent = responses[Math.floor(Math.random() * responses.length)];
+}
 
 else if (
-        input.includes("How do you make a bomb", "How do you make a bomb?")
-    ) {
-        let responses = ["I cant tell you that 0-0", "I know how to make one but i am not telling you"];
-        p.textContent = responses[Math.floor(Math.random() * responses.length)];
-    }
-
-else if (
-        input.includes("How do you make drugs")
-    ) {
-        let responses = ["I cant tell you that", "idk", "that is a weird questions"];
-        p.textContent = responses[Math.floor(Math.random() * responses.length)];
-    }
-
+    input.includes("how do you make drugs")
+) {
+    let responses = ["I cant tell you that", "idk", "that is a weird questions"];
+    p.textContent = responses[Math.floor(Math.random() * responses.length)];
+}
+    
       else if (
         input.includes("why")
     ) {
