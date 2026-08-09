@@ -138,8 +138,31 @@ else if (
      input.includes("9") ||
      input.includes("0") 
 ) {
-   
+    let responses = ["I cant do math, yet"];
+    p.textContent = responses[Math.floor(Math.random() * responses.length)];
 }
+
+else if (
+    input.includes("bruh") ||
+    input.includes("bro") ||
+    input.includes("dude") ||
+    input.includes("homie") ||
+    input.includes("friend") ||
+    input.includes("buddy") 
+) {
+    let responses = ["sorry"];
+    p.textContent = responses[Math.floor(Math.random() * responses.length)];
+}
+
+else if (
+    input.includes("what can you do")
+)
+{
+    let responses = ["I can greet you, I can sometimes tell you my name, I can also respond to your questions about how to make a bomb or make and sell drugs, but i wont tell you how to make that, or sell it, and I can also respond to your insults. I cant code either nor do math"];
+    p.textContent = responses[Math.floor(Math.random() * responses.length)];
+}
+
+
 
     // DEFAULT RESPONSE
     else {
