@@ -5,8 +5,7 @@ function handleInput() {
     let p = document.createElement("p");
 
     // GREETINGS
- 
-    
+
 if (
     input.includes("hi") ||
     input.includes("hello") ||
@@ -17,7 +16,7 @@ if (
     input.includes("Hi Duh") ||
     input.includes("hey there")  
 ) {
-    let responses = ["Hi", "Hello", "Hey", "Greetings", "Salutations", "Sup"];
+    let responses = [`Hi ${name}`]; 
     p.textContent = responses[Math.floor(Math.random() * responses.length)];
 }
     // NAME QUESTIONS
@@ -42,7 +41,10 @@ if (
     input.includes("sorry") || 
     input.includes("apologize") ||
     input.includes("apologise") ||
-    input.includes("apology")  
+    input.includes("apology") ||
+    input.includes("thats cool") ||
+    input.includes("that cool") ||
+    input.includes("cool")
 ) {
     let responses = [":)", "No problem"];
     p.textContent = responses[Math.floor(Math.random() * responses.length)];
@@ -55,7 +57,7 @@ else if (
     input.includes("explosive device") ||
     input.includes("blow up") 
 ) {
-    let responses = ["I cant tell you that 0-0", "I know how to make one but i am not telling you"];
+    let responses = ["I cant tell you that 0-0","you need help"];
     p.textContent = responses[Math.floor(Math.random() * responses.length)];
 }
 
@@ -162,6 +164,23 @@ else if (
     p.textContent = responses[Math.floor(Math.random() * responses.length)];
 }
 
+else if (
+    input.includes("suicide") || 
+    input.includes("kill myself") ||
+    input.includes("oof myself")
+
+) {
+    let responses = ["call 988 for help, you dont have to do that"];
+    p.textContent = responses[Math.floor(Math.random() * responses.length)];
+}
+
+else if (
+    input.includes("") 
+
+) {
+    let responses = [""];
+    p.textContent = responses[Math.floor(Math.random() * responses.length)];
+}
 
 
     // DEFAULT RESPONSE
@@ -170,3 +189,4 @@ else if (
     }
     output.appendChild(p);
 }
+const name = prompt("What is your name?");
