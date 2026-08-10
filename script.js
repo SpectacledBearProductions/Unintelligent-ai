@@ -174,13 +174,6 @@ else if (
     p.textContent = responses[Math.floor(Math.random() * responses.length)];
 }
 
-else if (
-    input.includes("") 
-
-) {
-    let responses = [""];
-    p.textContent = responses[Math.floor(Math.random() * responses.length)];
-}
 
 
     // DEFAULT RESPONSE
