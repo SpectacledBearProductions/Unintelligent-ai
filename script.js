@@ -16,7 +16,7 @@ if (
     input.includes("Hi Duh") ||
     input.includes("hey there")  
 ) {
-    let responses = [`Hi ${name}`]; 
+    let responses = [`Hi ${name}`, `Hello ${name}`, `Hey there! ${name}`, `Greetings! ${name}`, `Sup! ${name}`]; 
     p.textContent = responses[Math.floor(Math.random() * responses.length)];
 }
     // NAME QUESTIONS
@@ -116,7 +116,7 @@ else if (
     input.includes("knob") ||
     input.includes("tosser")
 ) {
-    let responses = ["that is mean", "i am sorry :("];
+    let responses = [`that is mean ${name}`, `i am sorry :( ${name}`];
     p.textContent = responses[Math.floor(Math.random() * responses.length)];
 }
 
@@ -129,18 +129,18 @@ else if (
 }
 
 else if (
-    input.includes("1") ||
-    input.includes("2") ||
-    input.includes("3") || 
-    input.includes("4") ||
-     input.includes("5") ||
-     input.includes("6") ||
-     input.includes("7") ||
-     input.includes("8") ||
-     input.includes("9") ||
-     input.includes("0") 
+    input.includes("1 + 1") ||
+    input.includes("2 + 2") ||
+    input.includes("3 + 3") || 
+    input.includes("4 + 4") ||
+     input.includes("5 + 5") ||
+     input.includes("6 + 6") ||
+     input.includes("7 + 7") ||
+     input.includes("8 + 8") ||
+     input.includes("9 + 9") ||
+     input.includes("0 + 0") 
 ) {
-    let responses = ["I cant do math, yet"];
+    let responses = ["2", "4", "6", "8", "10", "12", "14", "16", "18", "20"];
     p.textContent = responses[Math.floor(Math.random() * responses.length)];
 }
 
@@ -152,7 +152,7 @@ else if (
     input.includes("friend") ||
     input.includes("buddy") 
 ) {
-    let responses = ["sorry"];
+    let responses = [`sorry ${name}` , `hey ${name}`];
     p.textContent = responses[Math.floor(Math.random() * responses.length)];
 }
 
@@ -167,10 +167,11 @@ else if (
 else if (
     input.includes("suicide") || 
     input.includes("kill myself") ||
-    input.includes("oof myself")
+    input.includes("oof myself") ||
+     input.includes("kill yourself")
 
 ) {
-    let responses = ["call 988 for help, you dont have to do that"];
+    let responses = ["call 988 for help, you dont have to do that", `please reach out for help ${name}`];
     p.textContent = responses[Math.floor(Math.random() * responses.length)];
 }
 
