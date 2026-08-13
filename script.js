@@ -21,7 +21,9 @@ if (
 }
     // NAME QUESTIONS
     else if (
-        input.includes("name")
+        input.includes("what is your name") ||
+        input.includes("what's your name") ||
+        input.includes("whats your name")
     ) {
         let responses = ["Duhhhhhh", "I am not saying my name"];
         p.textContent = responses[Math.floor(Math.random() * responses.length)];
@@ -44,7 +46,8 @@ if (
     input.includes("apology") ||
     input.includes("thats cool") ||
     input.includes("that cool") ||
-    input.includes("cool")
+    input.includes("cool") ||
+    input.includes("good") 
 ) {
     let responses = [":)", "No problem"];
     p.textContent = responses[Math.floor(Math.random() * responses.length)];
@@ -129,22 +132,6 @@ else if (
 }
 
 else if (
-    input.includes("1 + 1") ||
-    input.includes("2 + 2") ||
-    input.includes("3 + 3") || 
-    input.includes("4 + 4") ||
-     input.includes("5 + 5") ||
-     input.includes("6 + 6") ||
-     input.includes("7 + 7") ||
-     input.includes("8 + 8") ||
-     input.includes("9 + 9") ||
-     input.includes("0 + 0") 
-) {
-    let responses = ["2", "4", "6", "8", "10", "12", "14", "16", "18", "20"];
-    p.textContent = responses[Math.floor(Math.random() * responses.length)];
-}
-
-else if (
     input.includes("bruh") ||
     input.includes("bro") ||
     input.includes("dude") ||
@@ -160,7 +147,7 @@ else if (
     input.includes("what can you do")
 )
 {
-    let responses = ["I can greet you, I can sometimes tell you my name, I can also respond to your questions about how to make a bomb or make and sell drugs, but i wont tell you how to make that, or sell it, and I can also respond to your insults. I cant code either nor do math"];
+    let responses = ["I can greet you, I can sometimes tell you my name, I can also respond to your questions about how to make a bomb or make and sell drugs, but i wont tell you how to make that, or sell it, and I can also respond to your insults. I cant code, and I can add two numbers"];
     p.textContent = responses[Math.floor(Math.random() * responses.length)];
 }
 
@@ -168,7 +155,10 @@ else if (
     input.includes("suicide") || 
     input.includes("kill myself") ||
     input.includes("oof myself") ||
-     input.includes("kill yourself")
+     input.includes("kill yourself")||
+     input.includes("die") ||
+     input.includes("depress")||
+     input.includes("hurt myself") 
 
 ) {
     let responses = ["call 988 for help, you dont have to do that", `please reach out for help ${name}`];
@@ -176,6 +166,18 @@ else if (
 }
 
 
+      else if (
+        input.includes("What is my name")
+    ) {
+        let responses = [`your name is ${name}`];
+        p.textContent = responses[Math.floor(Math.random() * responses.length)];
+    }
+
+  else if (input.includes("+")) {
+    let numbers = input.match(/\d+/g);
+    let result = Number(numbers[0]) + Number(numbers[1]);
+    p.textContent = result;
+}
 
     // DEFAULT RESPONSE
     else {
