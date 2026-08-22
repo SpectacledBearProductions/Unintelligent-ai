@@ -264,6 +264,22 @@ function handleInput() {
         p.textContent = responses[Math.floor(Math.random() * responses.length)];
     }
 
+ else if (
+        input.includes(":)") 
+    ) {
+        let responses = [":)"];
+        p.textContent = responses[Math.floor(Math.random() * responses.length)];
+    }
+
+     else if (
+        input.includes(":(") 
+    ) {
+        let responses = [":("];
+        p.textContent = responses[Math.floor(Math.random() * responses.length)];
+    }
+
+
+
     // DEFAULT RESPONSE
     else {
         p.textContent = "I dont understand";
